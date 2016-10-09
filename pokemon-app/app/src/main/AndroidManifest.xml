@@ -20,10 +20,14 @@
         </activity>
 
         <activity
+            android:name=".view.PokemonListActivity"
             android:label="@string/label_pokemon_list"
-            android:theme="@style/MyStyleWithActionBar"
-            android:name=".view.PokemonListActivity">
-        </activity>
+            android:theme="@style/MyStyleWithActionBar" />
+
+        <activity
+            android:name=".view.DetailsPokemonActivity"
+            android:label="@string/label_pokemon_details"
+            android:theme="@style/MyStyleWithActionBar" />
     </application>
 
 </manifest>

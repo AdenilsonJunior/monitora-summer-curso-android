@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/text_view_pokemon_name"
         android:layout_width="0dp"
-        android:text="Charmander"
+        android:text="Nome Pokemon"
         android:layout_weight="6"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
         android:id="@+id/text_view_pokemon_life"
         android:layout_width="0dp"
         android:layout_weight="2"
-        android:text="20"
+        android:text="vida"
         android:textSize="18sp"
         android:textStyle="bold"
         android:gravity="center"

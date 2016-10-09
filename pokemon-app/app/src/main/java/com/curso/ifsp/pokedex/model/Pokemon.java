@@ -1,10 +1,12 @@
 package com.curso.ifsp.pokedex.model;
 
+import java.io.Serializable;
+
 /**
  * Created by adenilson on 09/10/16.
  */
 
-public class Pokemon {
+public class Pokemon implements Serializable {
 
     private int[] image;
     private String name;

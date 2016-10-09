@@ -37,4 +37,18 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <!--Muda o estilo da progressbar_life -->
+    <style name="ProgressBarLife" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progressbar_life</item>
+    </style>
+    <!--Muda o estilo da progressbar_attack -->
+    <style name="ProgressBarAttack" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progressbar_attack</item>
+    </style>
+    <!--Muda o estilo da progressbar_defense -->
+    <style name="ProgressBarDefense" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progressbar_defense</item>
+    </style>
+
+
 </resources>
