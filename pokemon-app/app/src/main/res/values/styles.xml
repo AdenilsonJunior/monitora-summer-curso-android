@@ -6,6 +6,35 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <!--Define um estilo para nossos botões na aplicação-->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_style</item>
+        <item name="android:height">42dp</item>
+    </style>
+
+    <!--Defino um estilo para nossas activities que tem Action Bar-->
+    <style name="MyStyleWithActionBar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--Aqui acontece a mudança de estilo para toolbar-->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!--Começa a definir um estilo para a Action Bar-->
+    <style name="MyActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <!--Define um estilo pro titulo da Action Bar-->
+        <item name="titleTextStyle">@style/MyTitleStyle</item>
+        <!--Pinta o background da Action Bar-->
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+    <!--Muda a cor da aparência do titulo da Action Bar-->
+    <style name="MyTitleStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>
