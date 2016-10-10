@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <ImageView
-            android:id="@+id/img_view_pokemon"
-            android:layout_width="54dp"
-            android:layout_height="54dp"
-            android:layout_gravity="center"
-            android:src="@drawable/charmander"/>
+        android:id="@+id/img_view_pokemon"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+      />
 
     <TextView
-            android:id="@+id/txt_view_pokemon_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Charmander"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
+        android:id="@+id/txt_view_pokemon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Charmander"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
 
         <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:gravity="center"
-                android:orientation="horizontal">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
-                    android:id="@+id/txt_evolutions"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Evoluções:"/>
+                android:id="@+id/txt_evolutions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evoluções:" />
 
             <ImageView
-                    android:id="@+id/img_view_pokemon_ev1"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_below="@+id/txt_evolutions"
-                    android:src="@drawable/charmeleon"/>
+                android:id="@+id/img_view_pokemon_ev1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txt_evolutions"
+          />
 
             <ImageView
-                    android:id="@+id/img_view_pokemon_ev2"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_below="@+id/txt_evolutions"
-                    android:layout_toRightOf="@+id/img_view_pokemon_ev1"
-                    android:src="@drawable/charizard"/>
+                android:id="@+id/img_view_pokemon_ev2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txt_evolutions"
+                android:layout_toRightOf="@+id/img_view_pokemon_ev1"
+       />
 
         </RelativeLayout>
 
         <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:gravity="center"
-                android:orientation="horizontal">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
-                    android:id="@+id/title_txt_type"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tipo:"/>
+                android:id="@+id/title_txt_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo:" />
 
             <TextView
-                    android:id="@+id/txt_view_pokemon_type"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/title_txt_type"
-                    android:layout_marginTop="8dp"
-                    android:text="FOGO"
-                    android:textColor="@color/red"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
+                android:id="@+id/txt_view_pokemon_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_txt_type"
+                android:layout_marginTop="8dp"
+                android:text="FOGO"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
@@ -90,40 +90,43 @@
 
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Vida:"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Vida:" />
 
     <ProgressBar
-            android:id="@+id/progressbar_life"
-            style="@style/ProgressBarLife"
-            android:layout_width="match_parent"
-            android:layout_height="16dp"/>
+        android:id="@+id/progressbar_life"
+        style="@style/ProgressBarLife"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:max="10" />
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Ataque:"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ataque:" />
 
     <ProgressBar
-            android:id="@+id/progressbar_attack"
-            style="@style/ProgressBarAttack"
-            android:layout_width="match_parent"
-            android:layout_height="8dp"/>
+        android:id="@+id/progressbar_attack"
+        style="@style/ProgressBarAttack"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:max="10" />
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Defesa:"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Defesa:" />
 
     <ProgressBar
-            android:id="@+id/progressbar_defense"
-            style="@style/ProgressBarDefense"
-            android:layout_width="match_parent"
-            android:layout_height="8dp"/>
+        android:id="@+id/progressbar_defense"
+        style="@style/ProgressBarDefense"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:max="10" />
 
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.curso.ifsp.pokedex;
+package com.curso.ifsp.pokedex.view.adapter;
 
 import android.app.Activity;
 import android.support.v4.content.ContextCompat;
@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.curso.ifsp.pokedex.R;
 import com.curso.ifsp.pokedex.model.Pokemon;
 
 import java.util.List;
@@ -19,12 +20,10 @@ import java.util.List;
 
 public class PokemonListAdapter extends BaseAdapter {
 
-    private Activity activity;
     private List<Pokemon> pokemonList;
 
-    public PokemonListAdapter(Activity activity, List<Pokemon> pokemonList){
+    public PokemonListAdapter(List<Pokemon> pokemonList){
         this.pokemonList = pokemonList;
-        this.activity = activity;
     }
 
     //Quantidade de itens da sua lista
@@ -65,7 +64,7 @@ public class PokemonListAdapter extends BaseAdapter {
         }
 
         //Coloca as informações nos componentes através dos objetos java
-        myViewHolder.imageViewPokemon.setImageDrawable(ContextCompat.getDrawable(activity, pokemon.getImage()[0]));
+        myViewHolder.imageViewPokemon.setImageResource(pokemon.getImage()[0]);
         myViewHolder.textViewNamePokemon.setText(pokemon.getName());
         myViewHolder.textViewLifePointsPokemon.setText(String.valueOf(pokemon.getLife()));
 

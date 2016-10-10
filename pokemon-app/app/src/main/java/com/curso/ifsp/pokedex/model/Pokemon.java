@@ -1,5 +1,7 @@
 package com.curso.ifsp.pokedex.model;
 
+import android.graphics.drawable.Drawable;
+
 import java.io.Serializable;
 
 /**

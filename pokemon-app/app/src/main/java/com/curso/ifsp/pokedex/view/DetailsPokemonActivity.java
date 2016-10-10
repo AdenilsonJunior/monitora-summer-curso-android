@@ -8,6 +8,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.curso.ifsp.pokedex.R;
 import com.curso.ifsp.pokedex.model.Pokemon;
+import com.curso.ifsp.pokedex.utils.Utils;
 
 /**
  * Created by Estevao on 09/10/2016.
@@ -39,7 +40,7 @@ public class DetailsPokemonActivity extends AppCompatActivity {
         bindPokemonImages();
         bindPokemonType();
         bindLifeProgress();
-        bindAtackProgress();
+        bindAttackProgress();
         bindDefenseProgress();
     }
 
@@ -52,15 +53,15 @@ public class DetailsPokemonActivity extends AppCompatActivity {
         //Através do id no xml, encontra e transforma o componente em um objeto no java para poder manipular
         imageViewPokemonImage = (ImageView) findViewById(R.id.img_view_pokemon);
         //seta a imagem do pokemon no imageView
-        imageViewPokemonImage.setImageResource(pokemon.getImage()[0]);
+        imageViewPokemonImage.setImageDrawable(Utils.getDrawableByIdResource(this, pokemon.getImage()[0]));
 
         imageViewPokemonImageEv1 = (ImageView) findViewById(R.id.img_view_pokemon_ev1);
         //seta a imagem do pokemon no imageView
-        imageViewPokemonImage.setImageResource(pokemon.getImage()[1]);
+        imageViewPokemonImageEv1.setImageDrawable(Utils.getDrawableByIdResource(this, pokemon.getImage()[1]));
 
         imageViewPokemonImageEv2 = (ImageView) findViewById(R.id.img_view_pokemon_ev2);
         //seta a imagem do pokemon no imageView
-        imageViewPokemonImage.setImageResource(pokemon.getImage()[2]);
+        imageViewPokemonImageEv2.setImageDrawable(Utils.getDrawableByIdResource(this,pokemon.getImage()[2]));
 
     }
 
@@ -75,21 +76,18 @@ public class DetailsPokemonActivity extends AppCompatActivity {
     private void bindDefenseProgress() {
         //Através do id no xml, encontra e transforma o componente em um objeto no java para poder manipular
         progressBarDefense = (ProgressBar) findViewById(R.id.progressbar_defense);
-        progressBarDefense.setMax(100);
-        progressBarDefense.setProgress(10);
+        progressBarDefense.setProgress(pokemon.getDefense());
     }
 
-    private void bindAtackProgress() {
+    private void bindAttackProgress() {
         //Através do id no xml, encontra e transforma o componente em um objeto no java para poder manipular
         progressBarAttack = (ProgressBar) findViewById(R.id.progressbar_attack);
-        progressBarAttack.setMax(100);
-        progressBarAttack.setProgress(80);
+        progressBarAttack.setProgress(pokemon.getAttack());
     }
 
     private void bindLifeProgress() {
         //Através do id no xml, encontra e transforma o componente em um objeto no java para poder manipular
         progressBarLife = (ProgressBar) findViewById(R.id.progressbar_life);
-        progressBarLife.setMax(100);
-        progressBarLife.setProgress(95);
+        progressBarLife.setProgress(pokemon.getLife());
     }
 }

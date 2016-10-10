@@ -4,14 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.ListViewCompat;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.curso.ifsp.pokedex.PokemonListAdapter;
 import com.curso.ifsp.pokedex.R;
 import com.curso.ifsp.pokedex.model.Pokemon;
+import com.curso.ifsp.pokedex.view.adapter.PokemonListAdapter;
 
 import java.util.Arrays;
 import java.util.List;
@@ -53,7 +52,7 @@ public class PokemonListActivity extends AppCompatActivity {
 
         //Cria um adapter para lista. Adapter é a classe responsável por fazer a view de cada item
         //da lista.
-        PokemonListAdapter pokemonListAdapter = new PokemonListAdapter(this, pokemonList);
+        PokemonListAdapter pokemonListAdapter = new PokemonListAdapter(pokemonList);
         //Seta o adapter na lista, apartir daqui será criada view por view a cada item da lista
         listViewPokemon.setAdapter(pokemonListAdapter);
 
