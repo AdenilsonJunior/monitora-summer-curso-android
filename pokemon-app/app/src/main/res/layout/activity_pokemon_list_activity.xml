@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Lista de Pokemons"
+        android:layout_marginTop="16dp"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -18,7 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/label_pokemon_list"
-        android:layout_marginTop="8dp"
         android:divider="@color/colorPrimary" />
 
 </RelativeLayout>
