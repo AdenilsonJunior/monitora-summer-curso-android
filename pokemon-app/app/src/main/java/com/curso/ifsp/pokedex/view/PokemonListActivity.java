@@ -1,8 +1,10 @@
 package com.curso.ifsp.pokedex.view;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -49,6 +51,13 @@ public class PokemonListActivity extends AppCompatActivity {
 
     private void bindListViewPokemon() {
         listViewPokemon = (ListView) findViewById(R.id.list_view_pokemon);
+
+        //Cria um drawable de cor
+        ColorDrawable myColor = new ColorDrawable(ContextCompat.getColor(this, R.color.divider));
+        //seta essa cor como um divisor da lista
+        listViewPokemon.setDivider(myColor);
+        //seta a espessura da lista
+        listViewPokemon.setDividerHeight(1);
 
         //Cria um adapter para lista. Adapter é a classe responsável por fazer a view de cada item
         //da lista.

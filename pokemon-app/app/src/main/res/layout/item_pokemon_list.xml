@@ -1,55 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="8dp"
-        android:background="#CCC"/>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:orientation="horizontal">
-
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
 
     <ImageView
         android:id="@+id/image_view_pokemon"
-        android:src="@drawable/charmander"
         android:layout_width="0dp"
         android:layout_height="45dp"
-        android:layout_weight="2"/>
+        android:layout_weight="2"
+        android:src="@drawable/charmander" />
 
     <TextView
         android:id="@+id/text_view_pokemon_name"
         android:layout_width="0dp"
-        android:text="Nome Pokemon"
+        android:layout_height="wrap_content"
         android:layout_weight="6"
+        android:text="Nome Pokemon"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_view_pokemon_life"
         android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:text="vida"
-        android:textSize="18sp"
-        android:textStyle="bold"
         android:gravity="center"
+        android:text="vida"
         android:textColor="@color/green"
-        android:layout_height="wrap_content" />
-
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </LinearLayout>
-
-    </LinearLayout>

@@ -12,8 +12,7 @@
         android:id="@+id/img_view_pokemon"
         android:layout_width="54dp"
         android:layout_height="54dp"
-        android:layout_gravity="center"
-      />
+        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/txt_view_pokemon_name"
@@ -47,16 +46,14 @@
                 android:id="@+id/img_view_pokemon_ev1"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_below="@+id/txt_evolutions"
-          />
+                android:layout_below="@+id/txt_evolutions" />
 
             <ImageView
                 android:id="@+id/img_view_pokemon_ev2"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_below="@+id/txt_evolutions"
-                android:layout_toRightOf="@+id/img_view_pokemon_ev1"
-       />
+                android:layout_toRightOf="@+id/img_view_pokemon_ev1" />
 
         </RelativeLayout>
 
@@ -87,7 +84,6 @@
         </RelativeLayout>
 
     </LinearLayout>
-
 
     <TextView
         android:layout_width="wrap_content"
