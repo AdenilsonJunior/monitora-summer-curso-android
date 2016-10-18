@@ -49,7 +49,7 @@
 * https://drive.google.com/open?id=0BxgGgf2nAVqOcWxvRXBXcUZ5NDA
 
 ## Aplicativo finalizado:
-![SplashScreen](https://drive.google.com/open?id=0BxgGgf2nAVqOR1ZBblYwMG1pSTg)
+![SplashScreen](https://drive.google.com/file/d/0BxgGgf2nAVqOR1ZBblYwMG1pSTg/view?usp=sharing)
 
 
 
