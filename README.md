@@ -49,7 +49,7 @@
 * https://drive.google.com/open?id=0BxgGgf2nAVqOcWxvRXBXcUZ5NDA
 
 ## Aplicativo finalizado:
-![SplashScreen](https://uploaddeimagens.com.br/images/000/747/651/original/WhatsApp_Image_2016-10-17_at_23.49.31.jpeg?1476755908)
+![SplashScreen](https://uploaddeimagens.com.br/images/000/747/661/original/splash.jpeg?1476756105)
 
 
 
