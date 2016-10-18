@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--id para identificação que é o background da progress-->
     <item android:id="@android:id/background">
         <shape>
+            <!--arredondamento das bordas-->
             <corners android:radius="5dip" />
+            <!--angulo das cores-->
+            <!--cores do cento, inicio e fim-->
+            <!--posição do centro-->
             <gradient
                 android:angle="270"
                 android:centerColor="#8a9389"
@@ -13,24 +18,15 @@
         </shape>
     </item>
 
-    <item android:id="@android:id/secondaryProgress">
-        <clip>
-            <shape>
-                <corners android:radius="5dip" />
-                <gradient
-                    android:angle="270"
-                    android:centerColor="#80ffb600"
-                    android:centerY="0.75"
-                    android:endColor="#a0ffcb00"
-                    android:startColor="#80ffd300" />
-            </shape>
-        </clip>
-    </item>
-
+    <!--id para identificação que é o background da progress-->
     <item android:id="@android:id/progress">
         <clip>
             <shape>
+                <!--arredondamento das bordas-->
                 <corners android:radius="5dip" />
+                <!--angulo das cores-->
+                <!--cores do cento, inicio e fim-->
+                <!--posição do centro-->
                 <gradient
                     android:angle="270"
                     android:centerColor="#ee9618"

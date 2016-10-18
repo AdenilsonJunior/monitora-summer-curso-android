@@ -36,17 +36,28 @@ public class PokemonListActivity extends AppCompatActivity {
         createPokemons();
         //Transforma componente xml em objeto java e seta um adapter na lista
         bindListViewPokemon();
-
     }
 
     private void createPokemons() {
         int[] charmanderImages = {R.drawable.charmander, R.drawable.charmeleon, R.drawable.charizard};
+        int[] abraImages = {R.drawable.abra, R.drawable.kadabra, R.drawable.alakazam};
+        int[] bulbasaurImages = {R.drawable.bulbasaur, R.drawable.ivysaur, R.drawable.venusaur};
+        int[] dragonairImages = {R.drawable.dragonair, R.drawable.dratini, R.drawable.dragonite};
+        int[] gastlyImages = {R.drawable.gastly, R.drawable.gengar, R.drawable.haunter};
+        int[] pichuImages = {R.drawable.pichu, R.drawable.pikachu, R.drawable.raichu};
         int[] squirtleImages = {R.drawable.squirtle, R.drawable.wartortle, R.drawable.blastoise};
         int[] pidgeyImages = {R.drawable.pidgey, R.drawable.pidgeot, R.drawable.pidgeotto};
-        pokemonList = Arrays.asList(new Pokemon(charmanderImages, "Chamander", 20, 6, 4, Pokemon.TypePokemon.FIRE),
-                new Pokemon(squirtleImages, "Squirtle", 10, 3, 5, Pokemon.TypePokemon.WATER),
-                new Pokemon(pidgeyImages, "Pidgey", 6, 1, 8, Pokemon.TypePokemon.AIR));
 
+        pokemonList = Arrays.asList(
+                new Pokemon(charmanderImages, "Chamander", 80, 6, 4, Pokemon.TypePokemon.FIRE),
+                new Pokemon(squirtleImages, "Squirtle", 70, 3, 5, Pokemon.TypePokemon.WATER),
+                new Pokemon(pidgeyImages, "Pidgey", 86, 7, 4, Pokemon.TypePokemon.AIR),
+                new Pokemon(abraImages, "Abra", 95, 7, 8, Pokemon.TypePokemon.PSICHO),
+                new Pokemon(bulbasaurImages, "Bulbasaur", 45, 3, 8, Pokemon.TypePokemon.GRASS),
+                new Pokemon(dragonairImages, "Dragonair", 68, 4, 6, Pokemon.TypePokemon.AIR),
+                new Pokemon(gastlyImages, "Gastly", 78, 4, 6, Pokemon.TypePokemon.GHOST),
+                new Pokemon(pichuImages, "Pichu", 55, 6, 4, Pokemon.TypePokemon.ELETRICT)
+        );
     }
 
     private void bindListViewPokemon() {

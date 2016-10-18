@@ -79,13 +79,13 @@ public class Pokemon implements Serializable {
 
     public enum TypePokemon {
         AIR("Air"),
-        ELETRICT("Elitrict"),
+        ELETRICT("Eletrict"),
         FIRE("Fire"),
         WATER("Water"),
-        GHOTS("Ghost"),
+        GHOST("Ghost"),
+        GRASS("Grass"),
         DRAGON("Dragon"),
         PSICHO("Psicho");
-
 
         String type;
 

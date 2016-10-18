@@ -10,7 +10,6 @@ import android.support.v4.content.ContextCompat;
 
 public class Utils {
 
-
     public static Drawable getDrawableByIdResource(Activity activity, int id){
         return ContextCompat.getDrawable(activity, id);
     }
