@@ -1,5 +1,7 @@
 # Bem-vindo ao minicurso **Introdução ao desenvolvimento Android**
 
+# Aplicativo a ser desenvolvido: Pokedex!
+
 ## Android:
 * É o sistema operacional móvel da Google;
 * Baseado no kernel do Linux;
@@ -31,9 +33,20 @@
 * **build.gradle** Arquivo de configuração do Gradle;
 * **local.properties** Configurações locais do projeto.
 
- # Arquivos do módulo App:
+ ## Arquivos do módulo App:
 * https://drive.google.com/open?id=0BxgGgf2nAVqObTREV19zX0otWXM
+* **Classe R**: Contém constantes do projeto
 
+## Criando uma activity:
+* Criar um layout xml na pasta res/layout;
+* Criar código fonte Java dentro do diretório src/main/java;
+* Declarar sua activity no AndroidManifest.xml em manifests;
+
+## Ciclo de vida de uma activity
+* https://dariomungoi.files.wordpress.com/2015/01/basic-lifecycle.png
+
+## Adapter
+* https://drive.google.com/open?id=0BxgGgf2nAVqOcWxvRXBXcUZ5NDA
 
 
 
