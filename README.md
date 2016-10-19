@@ -7,7 +7,7 @@
 * Baseado no kernel do Linux;
 * Open Handset Alliance: grupo de líderes do mercado de telefonia www.openhandsetalliance.com/oha_members.html.
 * Líder mundial do segmento;
-* Diversas plataformas: Smartphones, Tables, GoogleTV, Android Wear(relógio), Google Glass(óculos) e outros;
+* Diversas plataformas: Smartphones, Tablets, GoogleTV, Android Wear(relógio), Google Glass(óculos) e outros;
 ![usabilidade](http://www.e-reading.club/illustrations/1029/1029595-_2.jpg)
 
 ## Mercado Digital
