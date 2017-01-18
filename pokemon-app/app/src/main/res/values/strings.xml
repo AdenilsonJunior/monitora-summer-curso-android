@@ -3,8 +3,8 @@
     <string name="hint_user_name">Username</string>
     <string name="hint_password">Password</string>
     <string name="login">LOGIN</string>
-    <string name="message_invalid_login">Login inválido</string>
-    <string name="label_pokemon_list">Lista de Pokemons</string>
-    <string name="label_pokemon_details">Detalhes Pokemon</string>
+    <string name="message_invalid_login">Login invalid</string>
+    <string name="label_pokemon_list">List of Pokemons</string>
+    <string name="label_pokemon_details">Pokemon Details</string>
     <string name="username_invalid">Please enter a valid username.</string>
 </resources>
