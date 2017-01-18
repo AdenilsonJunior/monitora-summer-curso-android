@@ -47,7 +47,8 @@ public class DetailsPokemonActivity extends AppCompatActivity {
 
     private void bindPokemonType() {
         txtViewpokemonType = (TextView) findViewById(R.id.txt_view_pokemon_type);
-        txtViewpokemonType.setText(pokemon.getTypePokemon());
+        txtViewpokemonType.setTextColor(pokemon.getTypePokemon().getColor());
+        txtViewpokemonType.setText(pokemon.getTypePokemon().getType());
     }
 
     private void bindPokemonImages() {

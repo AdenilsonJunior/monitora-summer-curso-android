@@ -77,7 +77,6 @@
                 android:layout_below="@+id/title_txt_type"
                 android:layout_marginTop="8dp"
                 android:text="FOGO"
-                android:textColor="@color/red"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

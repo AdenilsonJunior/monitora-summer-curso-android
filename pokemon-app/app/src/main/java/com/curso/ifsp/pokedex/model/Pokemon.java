@@ -1,6 +1,6 @@
 package com.curso.ifsp.pokedex.model;
 
-import android.graphics.drawable.Drawable;
+import android.graphics.Color;
 
 import java.io.Serializable;
 
@@ -68,8 +68,8 @@ public class Pokemon implements Serializable {
         this.defense = defense;
     }
 
-    public String getTypePokemon() {
-        return type.getType();
+    public TypePokemon getTypePokemon() {
+        return type;
     }
 
     public void setTypePokemon(TypePokemon type) {
@@ -78,24 +78,29 @@ public class Pokemon implements Serializable {
 
 
     public enum TypePokemon {
-        AIR("Air"),
-        ELETRICT("Eletrict"),
-        FIRE("Fire"),
-        WATER("Water"),
-        GHOST("Ghost"),
-        GRASS("Grass"),
-        DRAGON("Dragon"),
-        PSICHO("Psicho");
+        AIR("Air", Color.BLUE),
+        ELETRICT("Eletrict", Color.YELLOW),
+        FIRE("Fire", Color.RED),
+        WATER("Water", Color.CYAN),
+        GHOST("Ghost", Color.GRAY),
+        GRASS("Grass", Color.GREEN),
+        DRAGON("Dragon", Color.BLUE),
+        PSICHO("Psicho", Color.DKGRAY);
 
         String type;
+        private int color;
 
-        TypePokemon(String type) {
+        TypePokemon(String type, int color) {
             this.type = type;
-
+            this.color = color;
         }
 
         public String getType() {
             return type;
+        }
+
+        public int getColor() {
+            return color;
         }
     }
 
