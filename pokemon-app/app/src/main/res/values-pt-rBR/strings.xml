@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pokedex</string>
+    <string name="hint_user_name">Usuário</string>
+    <string name="hint_password">Senha</string>
+    <string name="login">ENTRAR</string>
+    <string name="message_invalid_login">Login inválido</string>
+    <string name="label_pokemon_list">Lista de Pokemons</string>
+    <string name="label_pokemon_details">Detalhes Pokemon</string>
+</resources>
