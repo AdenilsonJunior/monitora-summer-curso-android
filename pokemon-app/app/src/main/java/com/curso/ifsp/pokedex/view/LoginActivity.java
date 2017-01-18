@@ -61,14 +61,18 @@ public class LoginActivity extends AppCompatActivity {
                         editTextPassword.getText().clear();
                     }
                 }else //Se o campo usuário não conter @
-                    editTextUsername.setError("Por favor digite um usuário válido.");
+                    editTextUsername.setError(getString(R.string.username_invalid));
             }
         });
     }
 
     private void startPokemonListActivity() {
+        //cria uma intenção de ir da tela de login para a pokemonList
         Intent intent = new Intent(LoginActivity.this, PokemonListActivity.class);
+        //inicia a intenção criada acima
         startActivity(intent);
+        //termina esta activity
+        finish();
     }
 
     private void bindEditTextPassword() {
