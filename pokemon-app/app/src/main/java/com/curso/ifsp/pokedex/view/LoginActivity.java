@@ -44,21 +44,24 @@ public class LoginActivity extends AppCompatActivity {
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
 
-                //Simulação de uma validação de login
-                if (LoginHelper.validaLogin(username, password)) {
-                    //Se o login for válido, criaremos uma intenção de ir para a PokemonListActivity
-                    //e a mesma será iniciada.
-                    startPokemonListActivity();
-                } else {
-                    //Mostra uma mensagem Toast de aviso
-                    Toast.makeText(LoginActivity.this, R.string.message_invalid_login, Toast.LENGTH_SHORT).show();
+                //Validação do campo de username com @
+                if (LoginHelper.validaUsername(username)) {
+                    //Simulação de uma validação de login
+                    if (LoginHelper.validaLogin(username, password)) {
+                        //Se o login for válido, criaremos uma intenção de ir para a PokemonListActivity
+                        //e a mesma será iniciada.
+                        startPokemonListActivity();
+                    } else {
+                        //Mostra uma mensagem Toast de aviso
+                        Toast.makeText(LoginActivity.this, R.string.message_invalid_login, Toast.LENGTH_SHORT).show();
 
-                    //Limpa os campos dos EditText's
-                    //Pode ser usado também edittext.setText("");
-                    editTextUsername.getText().clear();
-                    editTextPassword.getText().clear();
-                }
-
+                        //Limpa os campos dos EditText's
+                        //Pode ser usado também edittext.setText("");
+                        editTextUsername.getText().clear();
+                        editTextPassword.getText().clear();
+                    }
+                }else //Se o campo usuário não conter @
+                    editTextUsername.setError("Por favor digite um usuário válido.");
             }
         });
     }

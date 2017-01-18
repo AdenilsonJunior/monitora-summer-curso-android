@@ -7,10 +7,14 @@ package com.curso.ifsp.pokedex.helper;
 public class LoginHelper {
 
     public static boolean validaLogin(String username, String password){
-        if(username.equals("user") && password.equals("123")){
+        if(username.equals("user@user.com") && password.equals("123")){
             return true;
         }else{
             return false;
         }
+    }
+
+    public static boolean validaUsername(String username) {
+        return username.contains("@");
     }
 }
