@@ -22,7 +22,7 @@ public class PokemonListAdapter extends BaseAdapter {
 
     private List<Pokemon> pokemonList;
 
-    public PokemonListAdapter(List<Pokemon> pokemonList){
+    public PokemonListAdapter(List<Pokemon> pokemonList) {
         this.pokemonList = pokemonList;
     }
 
@@ -55,11 +55,11 @@ public class PokemonListAdapter extends BaseAdapter {
         Pokemon pokemon = pokemonList.get(position);
 
         //Verifica se a view não foi criada
-        if(convertView == null){
+        if (convertView == null) {
             convertView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_pokemon_list, viewGroup, false);
             myViewHolder = new MyViewHolder(convertView);
             convertView.setTag(myViewHolder);
-        }else{
+        } else {
             myViewHolder = (MyViewHolder) convertView.getTag();
         }
 
@@ -76,12 +76,14 @@ public class PokemonListAdapter extends BaseAdapter {
         TextView textViewNamePokemon;
         TextView textViewLifePointsPokemon;
 
-        public MyViewHolder(View view){
+        public MyViewHolder(View view) {
             imageViewPokemon = (ImageView) view.findViewById(R.id.image_view_pokemon);
             textViewNamePokemon = (TextView) view.findViewById(R.id.text_view_pokemon_name);
             textViewLifePointsPokemon = (TextView) view.findViewById(R.id.text_view_pokemon_life);
         }
 
     }
+
+
 
 }
