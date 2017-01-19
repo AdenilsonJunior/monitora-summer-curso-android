@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.curso.ifsp.pokedex.R;
 import com.curso.ifsp.pokedex.model.Pokemon;
 
@@ -64,7 +65,11 @@ public class PokemonListAdapter extends BaseAdapter {
         }
 
         //Coloca as informações nos componentes através dos objetos java
-        myViewHolder.imageViewPokemon.setImageResource(pokemon.getImage()[0]);
+
+        Glide.with(viewGroup.getContext())
+                .load(pokemon.getImage()[0])
+                .into(myViewHolder.imageViewPokemon);
+
         myViewHolder.textViewNamePokemon.setText(pokemon.getName());
         myViewHolder.textViewLifePointsPokemon.setText(String.valueOf(pokemon.getLife()));
 
@@ -81,9 +86,5 @@ public class PokemonListAdapter extends BaseAdapter {
             textViewNamePokemon = (TextView) view.findViewById(R.id.text_view_pokemon_name);
             textViewLifePointsPokemon = (TextView) view.findViewById(R.id.text_view_pokemon_life);
         }
-
     }
-
-
-
 }
