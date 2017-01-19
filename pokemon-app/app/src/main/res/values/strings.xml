@@ -9,4 +9,6 @@
     <string name="username_invalid">Please enter a valid username.</string>
     <string name="logout">Logout</string>
     <string name="settings">Settings</string>
+    <string name="deletar">Delete</string>
+    <string name="visualizar">View</string>
 </resources>

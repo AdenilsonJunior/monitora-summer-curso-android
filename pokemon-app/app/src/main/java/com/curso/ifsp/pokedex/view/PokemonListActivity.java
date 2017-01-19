@@ -26,7 +26,6 @@ import com.curso.ifsp.pokedex.view.adapter.PokemonListAdapter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -122,7 +121,7 @@ public class PokemonListActivity extends AppCompatActivity {
         //cria a instancia de um inflador de menus
         MenuInflater inflater = getMenuInflater();
         //infla o nosso menu
-        inflater.inflate(R.menu.list_context_menu, menu);
+        inflater.inflate(R.menu.menu_list_context, menu);
         super.onCreateContextMenu(menu, v, menuInfo);
     }
 
