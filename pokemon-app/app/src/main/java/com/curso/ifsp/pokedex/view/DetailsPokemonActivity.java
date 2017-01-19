@@ -1,13 +1,18 @@
 package com.curso.ifsp.pokedex.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.curso.ifsp.pokedex.R;
+import com.curso.ifsp.pokedex.helper.LoginHelper;
 import com.curso.ifsp.pokedex.model.Pokemon;
 import com.curso.ifsp.pokedex.utils.Utils;
 
@@ -93,4 +98,5 @@ public class DetailsPokemonActivity extends AppCompatActivity {
         progressBarLife.setMax(100);
         progressBarLife.setProgress(pokemon.getLife());
     }
+
 }

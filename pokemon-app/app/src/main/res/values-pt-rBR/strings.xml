@@ -7,4 +7,6 @@
     <string name="label_pokemon_list">Lista de Pokemons</string>
     <string name="label_pokemon_details">Detalhes Pokemon</string>
     <string name="username_invalid">Por favor digite um usuário válido.</string>
+    <string name="logout">Sair</string>
+    <string name="settings">Configurações</string>
 </resources>

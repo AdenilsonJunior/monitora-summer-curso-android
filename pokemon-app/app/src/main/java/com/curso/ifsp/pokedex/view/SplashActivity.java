@@ -13,6 +13,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
 import com.curso.ifsp.pokedex.R;
+import com.curso.ifsp.pokedex.helper.LoginHelper;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -35,10 +36,18 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                //É criada uma intenção de ir para a LoginActivity
-                //e a mesma será iniciada.
-                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(intent);
+                //Verifica no shared preferences se um usuário ja esta logado.
+                if(LoginHelper.isLogged(SplashActivity.this)){
+                    //Se usuário logado, a tela de lista de pokemons ja será exibida.
+                    Intent intent = new Intent(SplashActivity.this, PokemonListActivity.class);
+                    startActivity(intent);
+                }else {
+
+                    //É criada uma intenção de ir para a LoginActivity
+                    //e a mesma será iniciada.
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                }
 
                 //Encerra esta activity para que o usuário nao consiga voltar nela.
                 finish();

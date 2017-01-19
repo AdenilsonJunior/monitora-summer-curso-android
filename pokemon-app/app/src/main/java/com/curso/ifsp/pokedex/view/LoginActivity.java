@@ -50,6 +50,8 @@ public class LoginActivity extends AppCompatActivity {
                     if (LoginHelper.validaLogin(username, password)) {
                         //Se o login for válido, criaremos uma intenção de ir para a PokemonListActivity
                         //e a mesma será iniciada.
+                        //Sera salvo tambem o status de login no Shared Preferences da nossa aplicação.
+                        LoginHelper.setLogged(LoginActivity.this, true);
                         startPokemonListActivity();
                     } else {
                         //Mostra uma mensagem Toast de aviso
