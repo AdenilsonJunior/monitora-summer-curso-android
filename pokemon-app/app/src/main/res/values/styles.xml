@@ -16,16 +16,17 @@
     </style>
 
     <!--Defino um estilo para nossas activities que tem Action Bar-->
-    <style name="MyStyleWithActionBar" parent="Theme.AppCompat.Light">
+    <style name="MyStyleWithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!--Aqui acontece a mudança de estilo para toolbar-->
         <item name="actionBarStyle">@style/MyActionBar</item>
+
     </style>
 
     <!--Começa a definir um estilo para a Action Bar-->
-    <style name="MyActionBar" parent="Widget.AppCompat.Light.ActionBar">
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar">
         <!--Define um estilo pro titulo da Action Bar-->
         <item name="titleTextStyle">@style/MyTitleStyle</item>
         <!--Pinta o background da Action Bar-->

@@ -6,11 +6,15 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.curso.ifsp.pokedex.R;
+import com.curso.ifsp.pokedex.helper.LoginHelper;
 import com.curso.ifsp.pokedex.model.Pokemon;
 import com.curso.ifsp.pokedex.view.adapter.PokemonListAdapter;
 
@@ -92,5 +96,37 @@ public class PokemonListActivity extends AppCompatActivity {
                 startActivity(goToDetailsPokemonActivity);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //Método responsável por inflar o menu na toolbar através do menuinflater.
+        getMenuInflater().inflate(R.menu.menu_list_pokemon, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        //Verificação de qual item do menu foi selecionado.
+        switch (item.getItemId()){
+            case R.id.menu_logout:
+                logout();
+                break;
+            case R.id.menu_settings:
+                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+        }
+
+
+        return super.onOptionsItemSelected(item);
+
+    }
+
+    private void logout() {
+        //Cria uma intenção de trocar de activity.
+        LoginHelper.setLogged(PokemonListActivity.this, false);
+        Intent intent = new Intent(PokemonListActivity.this, LoginActivity.class);
+        //Executa a intenção.
+        startActivity(intent);
     }
 }
