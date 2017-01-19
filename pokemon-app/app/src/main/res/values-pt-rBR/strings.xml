@@ -9,4 +9,6 @@
     <string name="username_invalid">Por favor digite um usuário válido.</string>
     <string name="logout">Sair</string>
     <string name="settings">Configurações</string>
+    <string name="deletar">Deletar</string>
+    <string name="visualizar">Visualizar</string>
 </resources>
